@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login-container {
+  background-color: #f9f9f9;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-container.fadeOut {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #696363;
+}
+
+@media (max-width: 600px) {
+  .login-container {
+    padding: 15px;
+    margin: 10px;
+  }
+}
