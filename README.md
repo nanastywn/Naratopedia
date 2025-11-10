@@ -1,2 +1,2 @@
 # naratopedia
-free
+testing
